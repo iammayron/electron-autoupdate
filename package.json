@@ -10,6 +10,11 @@
         "start": "electron .",
         "dist": "electron-builder"
     },
+    "repository": "https://github.com/iammayron/electron-autoupdate",
+    "publish": {
+        "provider": "github",
+        "releaseType": "release"
+    },
     "build": {
         "appId": "com.helloworld.autoupdate",
         "productName": "Autoupdater App",
@@ -22,10 +27,10 @@
     },
     "devDependencies": {
         "electron": "^30.0.1",
+        "electron-builder": "^24.13.3",
         "nodemon": "^3.1.0"
     },
     "dependencies": {
-        "electron-builder": "^24.13.3",
         "electron-updater": "^6.1.8"
     }
 }
